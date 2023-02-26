@@ -41,7 +41,9 @@ h3 {
     color: #000000;
 }
 
-.setuptext-all {}
+.setuptext-all {
+
+}
 
 .text-first {
     font-weight: 550;
@@ -116,6 +118,25 @@ h3 {
 
 .dinhdangpt {
     margin-bottom: 20px;
+}
+
+.tailieuhoc {
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+    background-color: beige;
+    margin-bottom: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.tailieuhoc a {
+    color: red;
+    font-size: 18px;
+    font-weight: 550;
 }
 
 /* responsive mobile */

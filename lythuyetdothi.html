@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý thuyết đồ thị</title>
+    <link rel="stylesheet" href="./baihoc.css">
+</head>
+<body>
+    <div class="tongquan_baihoc">
+        <h3>Chuyển đổi danh sách cạnh sang ma trận kề</h3>
+        <img src="./img/danhsachcanhsangmatranke.jpg" alt="">
+        <p>// chuyển đổi danh sách cạnh sang ma trận kề<br>
+            package baitaptuan1;<br>
+            
+            import java.util.Scanner;<br>
+            
+            public class danhsachcanhsangmatranke {<br>
+            
+                public static void main(String[] args) {<br>
+                    Scanner sc = new Scanner(System.in);<br>
+                    int n, m;<br>
+                    // n là đỉnh, m là cạnh<br>
+                    int[][] a = new int[1001][1001];<br>
+                    System.out.print("Nhập số đỉnh: ");<br>
+                    n = sc.nextInt();<br>
+                    System.out.print("Nhập số cạnh: ");<br>
+                    m = sc.nextInt();<br>
+                    // duyệt cạnh<br>
+                    System.out.println("Danh sách cạnh");<br>
+                    for (int i = 0; i < m; i++) {<br>
+                        // nhập 2 đỉnh của cạnh đó<br>
+                        int x, y;<br>
+                        x = sc.nextInt();<br>
+                        y = sc.nextInt();<br>
+                        a[x][y] = a[y][x] = 1;<br>
+                    }<br>
+                    System.out.println("Ma trận kề");<br>
+                    for (int i = 1; i <= n; i++) {<br>
+                        for (int j = 1; j <= n; j++) {<br>
+                            System.out.print(a[i][j] + " ");<br>
+                        }<br>
+                        System.out.println();<br>
+                    }<br>
+                }<br>
+            
+            }<br>
+            </p>
+            <h3>Chuyển đổi danh sách cạnh sang danh sách kề</h3>
+        <img src="./img/danhsachcanhsangdanhsachke.jpg" alt="">
+        <p>package baitaptuan1;<br>
+
+            import java.util.*;<br>
+            
+            public class danhsachcanhsangdanhsachke {<br>
+            
+                public static void main(String[] args) {<br>
+                    Scanner sc = new Scanner(System.in);<br>
+                    int n, m;<br>
+                    ArrayList <Integer>[] adj = new ArrayList[1001];<br>
+                    System.out.print("Nhập số đỉnh: ");<br>
+                    n = sc.nextInt();<br>
+                    System.out.print("Nhập số cạnh: ");<br>
+                    m = sc.nextInt();<br>
+            //		Khai báo bộ nhớ cho mảng<br>
+                    for (int i = 1; i <= 1000; i++) {<br>
+                        adj[i] = new ArrayList<Integer>();<br>
+                    }<br>
+                    System.out.println("Danh sách cạnh");<br>
+            //		Nhập 2 đỉnh của cạnh đó<br>
+                    for (int i = 0; i < m; i++) {<br>
+                        int x, y;<br>
+                        x = sc.nextInt();<br>
+                        y = sc.nextInt();<br>
+                        adj[x].add(y);<br>
+                        adj[y].add(x);<br>
+                    }<br>
+            //		Đưa ra danh sách kề<br>
+                    System.out.println("Danh sách kề");<br>
+                    for (int i = 1; i <= n; i++) {<br>
+                        System.out.print(i + " :");<br>
+                        for (int x : adj[i]) {<br>
+                            System.out.print(x + " ");<br>
+                        }<br>
+                        System.out.println();<br>
+                    }<br>
+                }<br>
+            }<br>
+            
+            </p>
+            <h5 style="color: red;">Lưu ý: Đối với ArrayList thêm integer sẽ có lỗi dấu"<" ">" nên các bạn coppy code nhớ check lại ở hình ảnh mà mình cung cấp.</h5>
+    </div>
+</body>
+</html>
