@@ -18,3 +18,9 @@ body {
 .tongquan_baihoc p {
     text-align: left;
 }
+
+@media screen and (min-width: 800px) {
+    .tongquan_baihoc p {
+        margin-left: 32%;
+    }
+}

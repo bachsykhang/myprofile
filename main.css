@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(https://worklap.vn/picture/file/TIN-TUC-2/hinh-nen-dep.jpg);
+    background: #333;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -17,6 +17,7 @@ body {
 .setHeader {
     display: flex;
     height: 200px;
+    width: 100%;
 }
 
 .set_all_avt {
