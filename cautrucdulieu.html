@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="tongquan_baihoc">
-        <a href="./giaotrinh/thuật toán sắp xếp CTDL.docx" download>Tải xuống giáo trình tổng hợp</a>
         <h3>Bubble sort (sắp xếp nổi bọt)</h3>
         <p>
             public class BubbleSortExample {  <br>
@@ -129,9 +128,47 @@
             }  <br>
         }  <br>
         }  <br>
-
-
         </p>
+        <h3>Insertion sort (sắp xếp chèn)</h3>
+        <p>
+            public class InsertionSortExample {  <br>
+                public static void insertionSort(int array[]) {  <br>
+                    int n = array.length;  <br>
+                    for (int j = 1; j < n; j++) {  <br>
+                        int key = array[j];  <br>
+                        int i = j-1;  <br>
+                        while ( (i > -1) && ( array [i] > key ) ) {  <br>
+                            array [i+1] = array [i];  <br>
+                            i--;  <br>
+                        }  <br>
+                        array[i+1] = key;  <br>
+                    }  <br>
+                }  <br>
+                   
+                public static void main(String a[]){    <br>
+                    int[] arr1 = {9,14,3,2,43,11,58,22};    <br>
+                    System.out.println("Before Insertion Sort");   <br> 
+                    for(int i:arr1){    <br>
+                        System.out.print(i+" ");    <br>
+                    }    <br>
+                    System.out.println();    <br>
+                        
+                    insertionSort(arr1);//sorting array using insertion sort    <br>
+                       
+                    System.out.println("After Insertion Sort");    <br>
+                    for(int i:arr1){    <br>
+                        System.out.print(i+" ");    <br>
+                    }    <br>
+                }    <br>
+            }  <br>
+            
+            
+        </p>
+
+        <h3>Giáo trình tổng hợp</h3>
+        <div style="margin-bottom: 15px;">
+            <a href="./giaotrinh/thuật toán sắp xếp CTDL.docx" download>Tải xuống giáo trình tổng hợp</a>
+        </div>
     </div>
 </body>
 </html>

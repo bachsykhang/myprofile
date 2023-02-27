@@ -27,6 +27,7 @@ body {
 .box_text_first {
     padding-left: 20px;
     padding-top: 10%;
+    width: 100%;
 }
 
 .avatar_Profile {
