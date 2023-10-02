@@ -9,7 +9,7 @@ body {
 }
 
 .content_all_box {
-    border: 1px solid;
+    /* border: 1px solid; */
     max-width: 600px;
     background-color: #b4c9c9;
 }
@@ -139,6 +139,14 @@ h3 {
     color: red;
     font-size: 18px;
     font-weight: 550;
+}
+
+.chitiet-profile {
+    font-weight: 550;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #333;
+    background-color: #fff;
 }
 
 /* responsive mobile */
